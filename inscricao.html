@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário de inscrição para participar das rodas de leitura e encontros.">
+  <meta name="author" content="Lucas Emanuel">
+  <title>Caderno das Cordas e Letras — Inscrição</title>
+</head>
+<body id="topo">
+  <header>
+    <h1>Inscrição nos Encontros</h1>
+    <p>Preencha os campos abaixo para registrar seu interesse nas próximas sessões.</p>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="repertorio.html">Repertório</a></li>
+        <li><a href="ensaios.html">Ensaios</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="inscricao.html">Inscrição</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="formulario-participacao">
+      <h2>Ficha de inscrição</h2>
+      <p>Todos os campos obrigatórios passam por validação nativa do navegador.</p>
+
+      <form action="#" method="post">
+        <p>
+          <label for="nome-completo">Nome completo</label><br>
+          <input type="text" id="nome-completo" name="nome" required minlength="3" pattern="[A-Za-zÀ-ÿ\s]+" title="Digite apenas letras e espaços, com pelo menos 3 caracteres.">
+        </p>
+
+        <p>
+          <label for="email-contato">E-mail</label><br>
+          <input type="email" id="email-contato" name="email" required>
+        </p>
+
+        <p>
+          <label for="telefone-contato">Telefone</label><br>
+          <input type="tel" id="telefone-contato" name="telefone" required minlength="8" pattern="[0-9+\-\s()]+" title="Digite um número de telefone válido.">
+        </p>
+
+        <p>
+          <label for="quantidade-sessoes">Quantidade de sessões desejadas</label><br>
+          <input type="number" id="quantidade-sessoes" name="sessoes" required min="1" max="12" value="1">
+        </p>
+
+        <p>
+          <button type="submit">Enviar inscrição</button>
+        </p>
+      </form>
+    </section>
+
+    <article id="informacoes-cadastro">
+      <h2>Confirmação e contato</h2>
+      <p>
+        Após o envio, os dados ficam organizados para confirmação da vaga na turma correspondente.
+      </p>
+      <ul>
+        <li>Use um e-mail ativo para receber avisos de horário.</li>
+        <li>Informe a quantidade de sessões que pretende acompanhar.</li>
+      </ul>
+      <p>
+        Página oficial do W3C para conferência de marcação:
+        <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Markup Validation Service</a>
+      </p>
+    </article>
+
+    <aside id="notas-finais">
+      <h2>Lembretes</h2>
+      <dl>
+        <dt>Validação</dt>
+        <dd>Verificação automática dos campos exigidos antes do envio do formulário.</dd>
+        <dt>Presença</dt>
+        <dd>Confirmação da participação nas datas combinadas na agenda.</dd>
+      </dl>
+      <p><a href="#topo">Voltar ao topo</a></p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Caderno das Cordas e Letras — Inscrição nos Encontros.</p>
+    <p><a href="#topo">Voltar ao topo</a></p>
+  </footer>
+</body>
+</html>
